@@ -1,0 +1,18 @@
+
+airquality
+str(airquality)
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone, color=Month))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone), color="red")
+ggplot(data=airquality) + geom_point(, mapping=aes(x = Temp, y = Ozone))
+ggplot(data=airquality) + geom_point(color="red", mapping=aes(x = Temp, y = Ozone))
+ggplot(data=iris)  + geom_point(mapping = aes(x = Sepal.Length, y = Sepal.Width, size = Species))
+ggplot(data=iris)  + geom_point(mapping = aes(x = Sepal.Length, y = Sepal.Width, shape = Species))
+ggplot(data=iris)  + geom_point(mapping = aes(x = Sepal.Length, y = Sepal.Width, size = Species))
+ggplot(data=iris)  + geom_point(mapping = aes(x = Sepal.Length, size = Sepal.Width, y = Species))
+ggplot(data=iris)  + geom_point(mapping = aes(x = Sepal.Length, shape = Sepal.Width, y = Species))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone)) + facet_wrap(~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone)) + facet_grid(Day~Month)
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone))
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone)) + scale_x_continuous("Temperature (F)")
+ggplot(data=airquality) + geom_point(mapping=aes(x = Temp, y = Ozone)) + scale_x_continuous("Temperature (F)", limits = c(60,90))
